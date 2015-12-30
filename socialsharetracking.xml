@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+  version="3.4"
+  type="plugin"
+  group="content"
+  method="upgrade"
+>
+  <name>PLG_CONTENT_SOCIALSHARETRACKING</name>
+  <author>Emerson Rocha Luiz</author>
+  <creationDate>2015-12-26</creationDate>
+  <copyright>Copyright (C) 2015 Alligo Ltda. All rights reserved.</copyright>
+  <license>MIT</license>
+  <authorEmail>emerson@alligo.com.br</authorEmail>
+  <authorUrl>http://fititnt.org</authorUrl>
+  <version>1.0.0alpha</version>
+  <description>PLG_CONTENT_SOCIALSHARETRACKING_XML_DESCRIPTION</description>
+  <files>
+    <filename plugin="socialsharetracking">socialsharetracking.php</filename>
+    <folder>language</folder>
+    <filename>LICENSE</filename>
+    <filename>README.md</filename>
+  </files>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.plg_content_socialsharetracking.ini</language>
+    <language tag="en-GB">en-GB/en-GB.plg_content_socialsharetracking.sys.ini</language>
+  </languages>
+  <media destination="alligo" folder="media">
+   <folder>js</folder>
+  </media>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+      </fieldset>
+    </fields>
+  </config>
+</extension>
