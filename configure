@@ -10,3 +10,6 @@ if [ ! -d "/alligo/code/" ]; then
   # upload da pasta inteira?
   exit
 fi
+
+#ln -s /alligo/code/alligo/plg_content_social-share-tracking/media/ /alligo/web/_/joomla34/media/alligo
+#ln -s /alligo/code/alligo/plg_content_social-share-tracking/ /alligo/web/_/joomla34/plugins/content/socialsharetracking
