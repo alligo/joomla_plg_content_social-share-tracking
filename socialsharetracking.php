@@ -15,16 +15,29 @@ defined('_JEXEC') or die;
  */
 class PlgContentSocialShareTracking extends JPlugin
 {
-
+    protected $for_except_categories = array();
+    protected $for_except_articles = array();
+    protected $for_only_categories = array();
+    protected $for_only_articles = array();
     protected $custom_class_facebook = '';
     protected $custom_class_gplus = '';
     protected $custom_class_twitter = '';
     protected $custom_class_whatsapp = '';
+    protected $ga_category = null; // if Null, will use article category
+    protected $ga_action_facebook = 'SharedOn/Facebook';
+    protected $ga_action_gplus  = 'SharedOn/Google+';
+    protected $ga_action_twitter = 'SharedOn/Twitter';
+    protected $ga_action_whatsapp = 'SharedOn/WhatsApp';
+    protected $is_elabled_ga = true;
     protected $is_elabled_facebook = false;
     protected $is_elabled_gplus = false;
     protected $is_elabled_twitter = false;
     protected $is_elabled_whatsapp = false;
     protected $is_elabled_whatsapp_onlymobile = true;
+    protected $text_facebook = 'Share on Facebook';
+    protected $text_gplus = 'Share on Google+';
+    protected $text_twitter = 'Share on Twitter';
+    protected $text_whatsapp = 'Share on WhatsApp';
 
     /**
      * 0: start of article
